@@ -9,7 +9,7 @@
 <body>
     <?php #Script handle form
 
-    if (strlen ($_POST["name"]) >0 ) {
+    if (strlen ($_POST["name"]) >0 ){ {
         $_POST["name"] = $_POST["name"];
     }
     else if {
@@ -26,6 +26,7 @@
     echo '<p><b> You Forgot to Enter Your Comments ! </b></p>';
 
     }
+}
     if (!(strlen($_POST["email"]) >0)) {
         $_POST["email"]= null;
         echo '<p><b> You Forgot to Enter Your Emails ! </b></p>';
