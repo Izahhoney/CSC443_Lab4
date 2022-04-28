@@ -34,10 +34,10 @@
     }
 
     if (isset ($_POST["gender"])) {
-        if($_POST[gender] == 'M'){
+        if($_POST["gender"] == 'M'){
             $message = '<b><p>Good Day, Sir </b></p>';
         }
-        if($_POST[gender] == 'F'){
+        if($_POST["gender"] == 'F'){
             $message = '<b><p>Good Day, Madam </b></p>';
         }
             
