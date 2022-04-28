@@ -13,7 +13,7 @@
         $_POST["name"] = $_POST["name"];
     }
     else {
-        $_POST["name"]= null;
+        $_POST["name"] = null;
 
     echo '<p><b> You Forgot to Enter Your Name! </b></p>';
     }
