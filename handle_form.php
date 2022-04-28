@@ -9,25 +9,25 @@
 <body>
     <?php #Script handle form
 
-    if (strlen ($_POST["name"]) >0 ); {
+    if (strlen ($_POST["name"]) >0 ) {
         $_POST["name"] = $_POST["name"];
     }
     else {
-        $_POST["name"] = null
+        $_POST["name"] = null;
 
     echo '<p><b> You Forgot to Enter Your Name! </b></p>';
     }
-     if (strlen ($_POST["comments"]) >0 ); {
+     if (strlen ($_POST["comments"]) >0 ) {
         $_POST["comments"] = $_POST["comments"];
     }
     else {
-        $_POST["comments"]= null
+        $_POST["comments"]= null;
 
     echo '<p><b> You Forgot to Enter Your Comments ! </b></p>';
 
     }
-    if (!(strlen($_POST["email"]) >0)); {
-        $_POST["email"]= null
+    if (!(strlen($_POST["email"]) >0)) {
+        $_POST["email"]= null;
         echo '<p><b> You Forgot to Enter Your Emails ! </b></p>';
     }
 
