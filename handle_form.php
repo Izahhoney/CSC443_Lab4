@@ -8,23 +8,25 @@
 </head>
 <body>
     <?php #Script handle form
-    if (strlen ($_POST["name"])>0 ){
+
+    if (strlen ($_POST["name"]) >0 ) {
         $_POST["name"] = $_POST["name"];
     }
     else {
         $_POST["name"]= null;
 
-echo '<p><b> You Forgot to Enter Your Name ! </b></p>';
+    echo '<p><b> You Forgot to Enter Your Name! </b></p>';
     }
-     if (strlen ($_POST["comments"])>0 ){
+     if (strlen ($_POST["comments"]) >0 ) {
         $_POST["comments"] = $_POST["comments"];
     }
     else {
         $_POST["comments"]= null;
 
-echo '<p><b> You Forgot to Enter Your Comments ! </b></p>';
+    echo '<p><b> You Forgot to Enter Your Comments ! </b></p>';
+
     }
-    if (!(strln($_POST["email"]) >0)) {
+    if (!(strlen($_POST["email"]) >0)) {
         $_POST["email"]= null;
         echo '<p><b> You Forgot to Enter Your Emails ! </b></p>';
     }
@@ -42,7 +44,7 @@ echo '<p><b> You Forgot to Enter Your Comments ! </b></p>';
         echo '<p><b> You Forgot to Choice Your Gender ! </b></p>';
     }
 
-    if ($_POST["name"] && $_POST["comments"] && $_POST["email"] && $_POST["gender"]) {
+    if ($_POST["name"] && $_POST["comments"] && $_POST["email"] && $_POST["gender"]) 
 echo "Thank you," .$_POST["name"]. "for the following comments: <br /> <tt>" .
 $_POST ["comments"]. " </tt> <p> We will reply to you at <i>" . $_POST["email"].
 "</i></p>";
